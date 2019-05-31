@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+
+}
+
+#header {
+
+  left:50%;
+  width: 850px;
+  height: 70px;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: aliceblue;
+  border: solid thin darkgrey;
+  
+}
+
+#header-img{
+  margin-left: 30px;
+  max-width: 40%;
+  height: 70px;
+}
+
+
+#nav-bar{
+  
+  text-align: center;
+  margin-top: 2%;
+  margin-right: 3%;
+  padding: 5px;
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  border-style: solid;
+  border-width: thin;
+  box-shadow: 2px 2px 2px grey;
+  height: 35px;
+  font-size: 1.3em;
+  background-color: beige;
+
+}
+
+#nav-link {
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+
+a:hover {
+  color: black;
+  background-color: salmon;  
+}
+
+#main-wrapper {
+  font-size: 1.2em;
+  margin: auto;
+  max-width: 850px;
+  border-style: solid;
+  border-color: darkgrey;
+  border-width: thin;
+  text-align: center;
+  border-radius: 5px;
+  background-color: azure
+
+ 
+}
+
+#submit {
+  display: inline-block;
+  width: 150px;
+  background-color: bisque;
+  font-size: 1em;
+}
+
+#submit:hover {
+  
+  background-color: salmon;
+
+}
+
+iframe {
+  max-width: 90%;
+  
+}
+
+#what-we-offer {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+#left-column-icons {
+
+  text-align: right;
+
+  }
+  
+#right-column {
+  
+  text-align: center;
+
+  }
+
+#pricing {
+  margin: auto;
+  max-width: 750px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-example {
+  margin: auto;
+  margin-bottom: 20px;
+  max-width: 40%;
+  padding: 2%;
+  border-style: solid;
+  border-width: thin;
+  box-shadow: 2px 2px 2px grey;
+}
+
+
+@media (max-width: 800px){
+  
+  #header-img {
+    display: none;
+  }
+
+  #nav-bar {
+    margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+
+  #header {
+    flex-direction: column;
+  }
+
+  #nav-bar {
+    flex-direction: column; 
+    background-color: aliceblue;
+    box-shadow: none;
+    border-style: none; 
+  }
+
+  #pricing {
+    flex-direction: column;
+  }
+
+  #left-column-icons {
+    display: none;
+  }
+
+}
